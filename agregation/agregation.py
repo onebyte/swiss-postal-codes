@@ -70,7 +70,7 @@ class Agregation_plz_bfs_v2():
 
 	def save(self):
 		with open(self.path + 'plz_data.json', 'w') as f:
-		    json.dump(self.plz_and_pop, f)
+			json.dump(self.plz_and_pop, f)
 
 	def process(self):
 		self.create_bfs_dict()
