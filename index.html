@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>SWISS MAP</title>
+		<link rel="shortcut icon" href="img/earth_icon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="css/swiss_map.css">
+		<link rel="stylesheet" href="css/loading.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="https://d3js.org/topojson.v1.min.js"></script>
+	</head>
+	<body>
+		<br><br>
+		<div class="wich_load">
+			<div class="btn_load" id="btn_load_swiss_map">
+				Load Swiss
+			</div>
+			<div class="btn_load" id="btn_load_vaud_map">
+				Load Vaud
+			</div>
+		</div>
+		<div class="option_box">
+			<div class="div_loading" id="load">
+				<div class="ball"></div>
+				<div class="ball1"></div>
+			</div>
+			<input type="text" id="plz" class="btn input_texte" placeholder="plz">
+			<input type="text" id="time" class="btn input_texte" value="2" placeholder="interval">
+			<br>
+			<div class="btn top_btn" id="zoom_to">
+				zoom to
+			</div>
+			<div class="btn top_btn" id="reset_zoom">
+				reset zoom
+			</div>
+			<div id="play" class="btn top_btn">
+				play
+			</div>
+		</div>
+		<div class="map_box swiss_plz"></div>
+		<div id="map_info_central_box"></div>
+		<div id="data"></div>
+		<div id="tooltip">
+			<div id="tooltip_title"></div>
+			<div id="tooltip_val"></div>
+		</div>
+		<script src="js/swiss_map.js"></script>
+	</body>
+</html>
