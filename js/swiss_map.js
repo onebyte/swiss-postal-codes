@@ -113,7 +113,7 @@ var loader =
 			{
 				svg_swiss_canton.append("path")
 				  .datum(topojson.mesh(ch, canton))
-				  .attr("class", "canton_white")
+				  .attr("class", "canton")
 				  .attr("d", path)
 				  .attr('canton', canton.properties.abbr);
 			});
@@ -258,7 +258,7 @@ var zoomer =
 		g2
 			.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")")
 			.style('stroke-width', (1 / d3.event.scale) + 'px')
-			.selectAll(".canton_white")
+			.selectAll(".canton")
 			.style('stroke-width', (3 / d3.event.scale) + 'px');
 
 		this.zoom_scale = d3.event.scale;
@@ -279,7 +279,7 @@ var zoomer =
 				.duration(this.duration)
 				.style('stroke-width', (1 / scale) + 'px')
 				.attr('transform', 'translate(' + translate + ') scale(' + scale + ')')
-				.selectAll(".canton_white")
+				.selectAll(".canton")
 				.style('stroke-width', (3 / scale) + 'px')
 				.each('end', function() {
 					zoomer.zoom.scale(scale);
@@ -318,7 +318,7 @@ var zoomer =
 
 	zoom_to_canton: function()
 	{
-		$('.canton_white').each(function(index)
+		$('.canton').each(function(index)
 		{
 			if ($(this).attr('canton') == loader.canton)
 			{
@@ -343,7 +343,7 @@ var zoomer =
 			.duration(this.duration)
 			.style('stroke-width', (1 / scale) + 'px')
 			.attr("transform", "translate(" + translate + ")scale(" + scale + ")")
-			.selectAll(".canton_white")
+			.selectAll(".canton")
 			.style('stroke-width', (3 / scale) + 'px')
 			.each('end', function() {
 				zoomer.zoom.scale(scale);
