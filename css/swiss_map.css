@@ -92,7 +92,7 @@ body{
   margin-left: 20px;
 }
 
-.canton_white{
+.canton{
   fill: #fff;
   fill-opacity: 0.0;
   stroke: #95006E;
@@ -119,10 +119,6 @@ body{
 .lakes:hover{
   fill-opacity: 0.7;
   stroke: #007fff;
-}
-
-.canton{
-  stroke: #333;
 }
 
 .plz{
