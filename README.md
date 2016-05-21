@@ -14,6 +14,13 @@ Demo
 --------------------------------------
 You can see a demo on this link: https://bassim.ch/swiss_map
 
+Options Box
+--------------------------------------
+The box above the map allows you to do several things.
+In the left input you can enter a postal code and zoom to. There is also a button to reset the zoom.
+In the right input you can change the time for zoom transition in second (2 by default).
+There is also a button "play" that chooses a random postal code, zoom to, reset zoom and restart.
+
 How the map data are generated
 --------------------------------------
 
