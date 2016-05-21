@@ -52,3 +52,8 @@ Installation
 --------------------------------------
 To install this system on your website, you only need to copy this repository.
 So if you create the folder your-web-site.com/swissMap/ place the repository on it and it will visible on this url.
+
+Author
+--------------------------------------
+This project has been made by Bassim Matar during the spring semester 2016. It has been realised in the data visualisation course given by Isaac Pante at the Lausanne University.
+
