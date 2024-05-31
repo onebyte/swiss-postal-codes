@@ -1,6 +1,6 @@
 {
   "name": "@onebyte/swiss-postal-codes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ZIP to commune/city and canton mappings",
   "main": "index.js",
   "scripts": {
