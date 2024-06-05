@@ -5255,6 +5255,10 @@
     "commune": "Thal",
     "canton": "SG"
   },
+  "6388": {
+    "commune": "Engelberg",
+    "canton": "OW"
+  },
   "6390": {
     "commune": "Engelberg",
     "canton": "OW"
@@ -8414,10 +8418,6 @@
   "5400": {
     "commune": "Baden",
     "canton": "AG"
-  },
-  "6388": {
-    "commune": "Wolfenschiessen",
-    "canton": "NW"
   },
   "1964": {
     "commune": "Conthey",
